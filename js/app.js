@@ -117,13 +117,15 @@ var mainForm = document.querySelector('.logistic__form'),
     logiscitBtn = document.querySelector('.logistic__btn-logistics'),
     inputs = document.querySelectorAll('.logistic__main-inputs input'),
     selects = document.querySelectorAll('.logistic__main-inputs select'),
-    options = document.querySelectorAll('.logistic__main-inputs select option');
-formBtn = document.querySelectorAll('.logistic__form-send-btn button'), blockWithSelects = document.querySelectorAll('.logistic__main-selects'), red = '#ba0000', yellow = '#ffcc00', white = 'white', yellowDark = '#9B7C00', redDark = '#9d0000', displayExpressForm = function displayExpressForm() {
-  mainForm.style.background = red;
-  inputs[0].placeholder = 'Track your shipment';
-  inputs[1].placeholder = 'Find POST point';
-  selects[0].options.selectedIndex = 0;
-  selects[1].options.selectedIndex = 0;
+    options = document.querySelectorAll('.logistic__main-inputs select option'),
+    formBtn = document.querySelectorAll('.logistic__form-send-btn button'), 
+    blockWithSelects = document.querySelectorAll('.logistic__main-selects'), 
+    red = '#ba0000', yellow = '#ffcc00', white = 'white', yellowDark = '#9B7C00', redDark = '#9d0000', displayExpressForm = function displayExpressForm() {
+    mainForm.style.background = red;
+    inputs[0].placeholder = 'Track your shipment';
+    inputs[1].placeholder = 'Find POST point';
+    selects[0].options.selectedIndex = 0;
+    selects[1].options.selectedIndex = 0;
 
   for (var _iterator = _createForOfIteratorHelperLoose(inputs), _step; !(_step = _iterator()).done;) {
     input = _step.value;
